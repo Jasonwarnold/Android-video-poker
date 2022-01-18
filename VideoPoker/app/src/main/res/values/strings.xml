@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Video Poker</string>
+    <string name="card">Poker Card</string>
+    <string name="dealBtn">Deal New Hand</string>
+    <string name="TitleScreen">VIDEO POKER</string>
+    <string name="payoutImgDescription">Video Poker Payout Table</string>
+    <string name="betBtn">Increase Bet $1</string>
+    <string name="drawBtn">Draw</string>
+    <string name="winningTxt">Winnings:</string>
+    <string name="betTxt">Bet:</string>
+    <string name="cashHead">Cash:</string>
+    <string name="betHead">Bet:</string>
+</resources>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#0000FF">
+<LinearLayout
+    android:id="@+id/payoutbar"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:weightSum="4">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/cashHead"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textColor="#FFD700"
+            android:layout_height="0dp"
+            android:text="@string/cashHead"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/cash"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textColor="#FFD700"
+            android:layout_height="0dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/payoutTable"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="140dp"
+        android:contentDescription="@string/payoutImgDescription"
+        android:src="@drawable/payout_table" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="2" >
+        <TextView
+            android:id="@+id/betHead"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textColor="#FFD700"
+            android:layout_height="0dp"
+            android:text="@string/betHead"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/bet"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textColor="#FFD700"
+            android:layout_height="0dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cards"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/payoutbar"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/card1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/red_back200"
+            android:clickable="true"
+            android:contentDescription="@string/card"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/card2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/red_back200"
+            android:contentDescription="@string/card"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/card3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/red_back200"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/card" />
+
+        <ImageView
+            android:id="@+id/card4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/red_back200"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/card" />
+
+        <ImageView
+            android:id="@+id/card5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/red_back200"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/card" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/cards"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/dealBtn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:background="#00aa00"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="45dp"
+            android:text="@string/dealBtn"
+            android:layout_marginStart="45dp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp" />
+
+        <Button
+            android:id="@+id/betBtn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:background="#00aa00"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="45dp"
+            android:layout_weight="1"
+            android:text="@string/betBtn"
+            android:layout_marginEnd="45dp" />
+    </LinearLayout>
+
+</RelativeLayout>
